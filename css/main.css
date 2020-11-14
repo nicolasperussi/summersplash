@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    transition: .5s;
+}
+
+/* #region sidenav */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: #46295A;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.sidenav a {
+    margin: 8px 8px 32px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links {
+    margin-top: 52px;
+}
+
+.sidenav a:hover {
+    color: #AEF359;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    font-size: 36px;
+}
+
+.openbtn {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    z-index: 9;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.openbtn i {
+    transition: 0.3s;
+}
+
+.openbtn i:hover {
+    color: #AEF359;
+}
+
+/* #endregion */
+
+.section {
+    position: relative;
+}
+
+/* #region Primeira Seção */
+
+.first-section {
+    width: 100%;
+    height: 720px;
+    background-color: #46295A;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: #46295A;
+    clip-path: circle(50%);
+    float: left;
+    z-index: 1 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo .logo-img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottle {
+    width: 800px;
+    height: 800px;
+    float: left;
+    z-index: 0;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+}
+
+.bottle-bg {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    filter: opacity(.3) blur(5px);
+}
+
+.bottle .bottle-img {
+    width: 900px;
+    height: 900px;
+    transform: rotate(10deg);
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+.title {
+    position: absolute;
+    font-weight: bolder;
+    color: #f1f1f1;
+    font-size: 5em;
+    top: 40%;
+    transform: translateY(-40%);
+    right: 5%;
+    line-height: 95px;
+    z-index: 2;
+}
+
+.title span.green {
+    color: #AEF359;
+}
+
+.title span.acai {
+    font-size: 1.2em;
+}
+
+.title span.guarana {
+    font-size: 0.33em;
+}
+
+.descubra {
+    position: absolute;
+    display: block;
+    top: 65%;
+    line-height: 30px;
+    margin-left: 300px;
+    width: max-content;
+}
+
+.descubra a {
+    color: #AEF359;
+    text-decoration: none;
+    font-size: .7em;
+    transition: 0.3s ease-in-out;
+}
+
+.descubra a:hover {
+    transform: translateX(5%);
+}
+
+.descubra a, .descubra span {
+    clear: both;
+    float: left;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f1f1f1;
+    font-size: 48px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fa-chevron-down:hover {
+    color: #AEF359;
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* #endregion */
+
+.second-section {
+    z-index: 2 !important;
+    width: 100%;
+    height: 720px;
+    background-color: #FCE205;
+}
+
+/* #region Terceira Seção */
+
+.third-section {
+    width: 100%;
+    height: 720px;
+    background-image: radial-gradient(#4C79FF,#1d2f63);
+    z-index: 3;
+}
+
+.fundo-produtos {
+    position: absolute;
+    height: 100%;
+    width: 1200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    filter: opacity(.1) blur(10px);
+}
+
+.third-section .title-produtos {
+    width: 100%;
+    text-align: center;
+    font-size: 2.7em;
+    display: block;
+    color: #FCE205;
+    margin-top: 3%;
+}
+
+.produtos {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.lata {
+    text-align: center;
+    transition: 0.2s;
+    color: #FCE205;
+    position: relative;
+}
+
+.lata .lata-img {
+    width: 170px;
+}
+
+.lata h1 {
+    font-weight: 500;
+}
+
+.lata:hover {
+    text-decoration: underline;
+    color: #FCE205;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.novo {
+    width: 150px;
+    position: absolute;
+    transform: rotate(-20deg);
+    border-radius: 5px;
+    left: -25%;
+}
+
+/* #endregion  */
+
+.content {
+    padding: 25px;
+    overflow: hidden;
+}

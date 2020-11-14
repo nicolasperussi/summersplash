@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/32f6f984b0.js" crossorigin="anonymous"></script>
+
+  <title>Summer Splash</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Produtos</a>
+    </div>
+  </div>
+
+  <span style="color: #f1f1f1;" class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+  <div id="main">
+    <div class="section first-section">
+      <div class="content first-content">
+
+        <div class="logo">
+          <a href="index.html"><img class="logo-img" src="src/logos/logo-summer.png" alt="logo"></a>
+        </div>
+
+        <div class="bottle">
+          <img src="src/circulo-retas.png" alt="" class="bottle-bg">
+          <img src="src/latas-garrafas/bottle-mockup-acai.png" alt="garrafa-acai" class="bottle-img">
+        </div>
+
+        <div class="title">
+          LANÇAMENTO<br>
+          <span class="green">SUMMER SPLASH</span><br>
+          <span class="acai">AÇAÍ!</span>
+          <div class="descubra">
+            <span class="guarana">Com um toque de guaraná</span>
+            <a href="#">DESCUBRA <i class="fas fa-angle-double-right"></i></a>
+          </div>
+
+        </div>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+
+    <div class="section second-section">
+
+      <div class="content second-content">
+      </div>
+
+    </div>
+
+    <div class="section third-section">
+
+      <div class="content third-content">
+        <img src="/src/circulo-retas.png" alt="" class="fundo-produtos">
+
+        <h1 class="title-produtos">CONHEÇA NOSSOS PRODUTOS</h1>
+
+        <div class="produtos">
+
+          <div class="lata" onclick="">
+            <img src="/src/latas-garrafas/mockup-melao.png" alt="lata-melao" class="lata-img">
+            <h1>MELÃO</h1>
+          </div>
+
+          <div class="lata" onclick="">
+            <img src="/src/latas-garrafas/mockup-maracuja.png" alt="lata-maracuja" class="lata-img">
+            <h1>MARACUJÁ</h1>
+          </div>
+
+          <div class="lata" onclick="">
+            <img src="/src/latas-garrafas/mockup-melancia.png" alt="lata-melancia" class="lata-img">
+            <h1>MELANCIA</h1>
+          </div>
+
+          <div class="lata" onclick="">
+            <img src="/src/novo.png" alt="" class="novo">
+            <img src="/src/latas-garrafas/mockup-acai.png" alt="lata-acai" class="lata-img">
+            <h1>AÇAÍ</h1>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Carousel JS -->
+  <script>
+    $('.carousel').slick();
+  </script>
+
+  <script>
+    function openNav() {
+      document.getElementById('mySidenav').style.width = '250px'
+      document.getElementById('mySidenav').style.boxShadow = '-10px 0px 600px 50px #000'
+    }
+
+    function closeNav() {
+      document.getElementById('mySidenav').style.width = '0'
+      document.getElementById('mySidenav').style.boxShadow = ''
+    }
+  </script>
+</body>
+
+</html>
