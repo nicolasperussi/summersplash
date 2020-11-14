@@ -275,7 +275,6 @@ body, html {
 }
 
 .lata:hover {
-    text-decoration: underline;
     color: #FCE205;
     transform: scale(1.1);
     cursor: pointer;
@@ -321,6 +320,7 @@ footer .footer-logo {
 
 .texto-rodape a {
     text-decoration: none;
+    color: #9B1003;
 }
 
 .texto-rodape a:visited {
