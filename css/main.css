@@ -19,6 +19,11 @@ body, html {
     transition: .5s;
 }
 
+.content {
+    padding: 25px;
+    overflow: hidden;
+}
+
 /* #region sidenav */
 
 .sidenav {
@@ -286,7 +291,46 @@ body, html {
 
 /* #endregion  */
 
-.content {
-    padding: 25px;
-    overflow: hidden;
+/* #region Rodapé */
+
+footer {
+    height: 240px;
+    width: 100%;
+    background-color: #e2e2e2;
+    position: relative;
+    padding: 0 10%;
 }
+
+footer .footer-logo {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.texto-rodape {
+    position: absolute;
+    color: #9B1003;
+    font-weight: 600;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.texto-rodape a {
+    text-decoration: none;
+}
+
+.texto-rodape a:visited {
+    color: #9B1003;
+}
+
+.icones-rodape {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+/* #endregion */
