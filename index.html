@@ -31,7 +31,7 @@
   <span style="color: #f1f1f1;" class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></span>
 
   <div id="main">
-    <div class="section first-section">
+    <div id="firstSection" class="section first-section">
       <div class="content first-content">
 
         <div class="logo">
@@ -53,17 +53,17 @@
           </div>
 
         </div>
-        <i class="fas fa-chevron-down"></i>
+        <i id="btnDown" class="fas fa-chevron-down"></i>
       </div>
     </div>
 
-    <div class="section second-section">
+    <div id="secondSection" class="section second-section">
 
       <div class="content second-content">
         <img src="/src/circulo-retas.png" class="circulo-promo" alt="">
 
         <img src="/src/hian-desgracadao.png" class="hian" alt="">
-        <h1>PROMOÇÃO SUMMER</h1>
+        <h1 id="secondSection-title">PROMOÇÃO SUMMER</h1>
         <div class="texto">
           CADASTRE SEU PRODUTOS E CONCORRA A PRÊMIOS INCRÍVEIS!
           <div class="saiba-mais">
@@ -74,7 +74,7 @@
 
     </div>
 
-    <div class="section third-section">
+    <div id="thirdSection" class="section third-section">
 
       <div class="content third-content">
         <img src="/src/circulo-retas.png" alt="" class="fundo-produtos">
@@ -104,7 +104,7 @@
             <h1>AÇAÍ</h1>
           </div>
 
-          
+
 
         </div>
 
@@ -116,7 +116,8 @@
       <img src="/src/logos/logo-summer.png" alt="footer-logo" class="footer-logo">
       <div class="texto-rodape">
         <h2>FALE CONOSCO</h2>
-        <a href="#">Termos de Uso</a> • <a href="#">Política de Privacidade</a> • <a href="#">Política Nutricional</a><br>
+        <a href="#">Termos de Uso</a> • <a href="#">Política de Privacidade</a> • <a href="#">Política
+          Nutricional</a><br>
         © 2020 SUMMER SPLASH | DESDE 1998
         <div class="icones-rodape">
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -141,17 +142,7 @@
     $('.carousel').slick();
   </script>
 
-  <script>
-    function openNav() {
-      document.getElementById('mySidenav').style.width = '250px'
-      document.getElementById('mySidenav').style.boxShadow = '-5px 0px 600px 0px #000'
-    }
-
-    function closeNav() {
-      document.getElementById('mySidenav').style.width = '0'
-      document.getElementById('mySidenav').style.boxShadow = ''
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
