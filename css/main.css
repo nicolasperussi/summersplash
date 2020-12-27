@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
-
-
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -37,6 +36,7 @@ body, html {
 }
 
 /* #region sidenav */
+
 .my-sidenav {
     height: 100%;
     width: 0;
@@ -49,6 +49,7 @@ body, html {
     padding-top: 60px;
     transition: 0.5s ease-in-out;
 }
+
 .my-sidenav a {
     margin: 8px 8px 32px 32px;
     text-decoration: none;
@@ -58,17 +59,21 @@ body, html {
     display: block;
     transition: 0.3s ease-in-out;
 }
+
 .nav-links {
     margin-top: 52px;
 }
+
 .my-sidenav a:hover {
     color: #AEF359;
 }
+
 .my-sidenav .closebtn {
     position: absolute;
     top: 20px;
     font-size: 4.8rem;
 }
+
 .openbtn {
     position: absolute;
     top: 25px;
@@ -77,14 +82,19 @@ body, html {
     font-size: 4.8rem;
     cursor: pointer;
 }
+
 .openbtn i {
     transition: 0.3s;
 }
+
 .openbtn i:hover {
     color: #AEF359;
 }
+
 /* #endregion */
+
 /* #region Primeira Seção */
+
 .first-section {
     width: 100%;
     height: 640px;
@@ -92,6 +102,7 @@ body, html {
     background-position: top;
     background-size: cover;
 }
+
 .logo {
     position: absolute;
     top: 0;
@@ -101,6 +112,7 @@ body, html {
     z-index: 1 !important;
     transition: all 0.2s ease-in-out;
 }
+
 .logo:hover {
     transform: scale(1.1);
 }
@@ -108,6 +120,23 @@ body, html {
 .logo-img {
     width: 100%;
 }
+
+.descubra {
+    position: absolute;
+    right: 180px;
+    bottom: 150px;
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.descubra:hover {
+    color: #AEF359;
+    transform: translateX(20px);
+}
+
 .fa-chevron-down {
     position: absolute;
     bottom: 5%;
@@ -118,29 +147,36 @@ body, html {
     cursor: pointer;
     transition: 0.2s;
 }
+
 .fa-chevron-down:hover {
     color: #AEF359;
     transform: translateX(-50%) scale(1.1);
 }
+
 /* #endregion */
+
 /* #region Segunda Seção */
+
 .second-section {
     z-index: 2 !important;
     width: 100%;
     height: 100vh;
     background-color: #FCE205;
 }
+
 .second-section .hian {
     width: 50%;
     position: relative;
     bottom: 0;
 }
+
 .second-section h1 {
     font-size: 6em;
     text-align: center;
     margin-top: 5%;
     color: #46295A;
 }
+
 .second-section .texto {
     display: block;
     width: 400px;
@@ -155,6 +191,7 @@ body, html {
     transform: translateY(-50%);
     overflow-y: hidden;
 }
+
 .saiba-mais {
     margin: 0 auto;
     margin-top: 40px;
@@ -165,13 +202,16 @@ body, html {
     text-align: center;
     transition: 0.3s ease-in-out;
 }
+
 .saiba-mais a {
     color: #f1f1f1;
     text-decoration: none;
 }
+
 .saiba-mais:hover {
     transform: scale(1.1);
 }
+
 .circulo-promo {
     position: absolute;
     right: -30%;
@@ -181,14 +221,18 @@ body, html {
     width: 800px;
     filter: blur(5px) opacity(.1);
 }
+
 /* #endregion */
+
 /* #region Terceira Seção */
+
 .third-section {
     width: 100%;
     height: 100vh;
     background-image: radial-gradient(#4C79FF, #1d2f63);
     z-index: 3;
 }
+
 .fundo-produtos {
     position: absolute;
     height: 100%;
@@ -198,6 +242,7 @@ body, html {
     transform: translate(-50%, -50%);
     filter: opacity(.1) blur(10px);
 }
+
 .third-section .title-produtos {
     width: 100%;
     text-align: center;
@@ -206,6 +251,7 @@ body, html {
     color: #FCE205;
     margin-top: 3%;
 }
+
 .produtos {
     position: absolute;
     top: 55%;
@@ -215,23 +261,28 @@ body, html {
     justify-content: space-around;
     width: 80%;
 }
+
 .lata {
     text-align: center;
     transition: 0.2s;
     color: #FCE205;
     position: relative;
 }
+
 .lata .lata-img {
     width: 170px;
 }
+
 .lata h1 {
     font-weight: 500;
 }
+
 .lata:hover {
     color: #FCE205;
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .novo {
     width: 150px;
     position: absolute;
@@ -239,8 +290,11 @@ body, html {
     border-radius: 5px;
     left: -25%;
 }
+
 /* #endregion  */
+
 /* #region Rodapé */
+
 footer {
     height: 240px;
     width: 100%;
@@ -248,12 +302,14 @@ footer {
     position: relative;
     padding: 0 10%;
 }
+
 footer .footer-logo {
     height: 80%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
+
 .texto-rodape {
     position: absolute;
     color: #9B1003;
@@ -264,53 +320,29 @@ footer .footer-logo {
     font-size: 1.2em;
     line-height: 35px;
 }
+
 .texto-rodape a {
     text-decoration: none;
     color: #9B1003;
 }
+
 .texto-rodape a:visited {
     color: #9B1003;
 }
+
 .icones-rodape {
     font-size: 2em;
     display: flex;
     justify-content: space-between;
     width: 40%;
 }
+
 /* #endregion */
 
-@media (max-width: 2560px) {
-    .title {
-        font-size: 15rem;
-        line-height: 19rem;
-    }
+@media (max-width: 2560px) {}
 
-    .descubra {
-        line-height: 7.5rem;
-        margin-left: 550px;
-    }
-    .bottle-img {
-        bottom: 100px;
-    }
-}
+@media (max-width: 1440px) {}
 
-@media (max-width: 1440px) {
-    .title {
-        font-size: 10rem;
-        line-height: 13rem;
-    }
+@media (max-width: 1024px) {}
 
-    .descubra {
-        line-height: 5.5rem;
-        margin-left: 370px;
-    }
-    .bottle-img {
-        bottom: -25px;
-    }
-}
-@media (max-width: 1024px) {
-    
-}
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
