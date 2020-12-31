@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #region firstSection */
+
+.firstSection {
+    width: 100%;
+    background-color: #46295a;
+    position: relative;
+}
+
+.firstSection h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 0.9em;
+}
+
+.acai {
+    font-size: 6em!important;
+}
+
+.descubraAcai {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.descubraAcai:hover {
+    text-decoration: none;
+    color: #aef359;
+    margin-left: 15px;
+}
+
+.circulo {
+    position: absolute;
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.logo {
+    position: absolute;
+    left: -15%;
+    bottom: 55%;
+    width: 250px;
+    height: 250px;
+    background-color: #46295a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* #endregion */
+
+.secondSection {
+    background-color: #fce205;
+    position: relative;
+}
+
+.promo {
+    color: #46295a;
+    z-index: 999;
+}
+
+.promo h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.promo h4 {
+    font-size: 30px;
+}
+
+.btn-roxo {
+    background-color: #46295a;
+    border-radius: 30px;
+    color: white;
+    font-size: 30px;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.btn-roxo:hover {
+    background-color: #2d1b3a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.circuloPromo {
+    position: absolute;
+    right: -20%;
+    height: 100%;
+}
+
+.thirdSection {
+    background: rgb(76,121,255);
+    background: radial-gradient(circle, rgba(76,121,255,1) 0%, rgba(33,53,112,1) 100%);
+    padding: 30px 150px;
+}
+
+.produtosTitulo {
+    font-weight: 700;
+    color: #fce205;
+    width: 100vw;
+}
+
+.lata img {
+    width: 150px;
+    height: auto;
+    align-self: center;
+}
+
+.lata h4 {
+    color: #fce205;
+    font-size: 2em;
+}
+
+.lata {
+    transition: 0.3s;
+}
+
+.lata:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e1e1e1;
+}
+
+.footerContent {
+    color: #9b1003;
+}
+
+.footerContent a {
+    color: #9b1003;
+}
+
+.footerContent h5 {
+    font-weight: 600;
+}
+
+.footerContent .tituloFooter {
+    font-weight: 700;
+}
+
+.footerContent .fas {
+    font-size: 50px;
+}
+
+.footerContent .fab {
+    font-size: 30px;
+    text-align: center;
+}
+
+.linkFooterWrapper {
+    background-color: #9b1003;
+    transition: 0.3s;
+}
+
+.linkFooterWrapper:hover {
+    background-color: #810b00;
+}
+
+.linkFooter:hover {
+    text-decoration: none;
+}

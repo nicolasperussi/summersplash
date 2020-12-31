@@ -1,0 +1,24 @@
+Summer Splash
+
+cores:
+	- branco
+	- azul royal #4169e1
+	- roxo #46295a
+	- verde #aef359
+	- amarelo #fce205
+	- vermelho #9b1003
+
+tons de royal blue {
+	#4C79FF
+	#4169E1
+	#3656B6
+	#2A4490
+	#213570
+}
+
+tipografia
+	- Kind of Rock (logomarca)
+	- Poppins (todo o resto)
+	- Pluto (subtitulos e detalhes)
+
+
