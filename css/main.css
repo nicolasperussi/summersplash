@@ -247,7 +247,27 @@ footer {
 }
 /* #endregion */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:1024px) {
+    .logo {
+        top: 0;
+        left: -15px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .firstSection h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+    .acai {
+        font-size: 7rem;
+    }
+
+    .descubraAcai {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:768px) {
     nav {
         padding: 0px!important;
     }
@@ -264,7 +284,71 @@ footer {
         text-align: center;
         font-size: 3rem;
     }
+    .logo {
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 250px;
+    }
+    .firstSection {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .firstSection h1 {
+        font-size: 6.8rem;
+        line-height: 8rem;
+    }
+    .firstSection .acai {
+        font-size: 8.8rem!important;
+    }
+    .acaiDescubra {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .firstSection .descubraAcai {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+    .descubraAcai:hover {
+        margin-left: 0;
+    }
+    .firstSection .titulo {
+        justify-self: center;
+        text-align: center;
+    }
+    .firstSection .titulo div {
+        margin: auto;
+    }
+    .firstSection .container>.row {
+        flex-direction: column;
+    }
+    .footerContent h5 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .footerContent {
+        margin: 32px 0;
+    }
+    .logoFooter {
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 32px;
+    }
+    .social {
+        margin: 32px auto 0px;
+        width: 50%;
+        padding: 0 15px;
+    }
 
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .navbar-toggler-icon {
+        font-size: 3em;
+    }
+}
+@media screen and (max-width:576px) {
+    
     /* #region firstSection */
     .logo {
         left: 0;
@@ -372,4 +456,21 @@ footer {
         padding: 0 15px;
     }
     /* #endregion */
+}
+@media screen and (max-width:320px) {
+    .firstSection h1 {
+        font-size: 3rem;
+        line-height: 3.8rem;
+    }
+    .firstSection .acai {
+        font-size: 4rem!important;
+    }
+    .acaiDescubra {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .firstSection .descubraAcai {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
 }
