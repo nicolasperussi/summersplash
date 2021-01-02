@@ -1,12 +1,35 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    font-size: 1.6rem;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+nav {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    color: white;
+    z-index: 999;
+    font-size: 2rem;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
 }
 
 /* #region firstSection */
@@ -20,17 +43,27 @@ body {
 .firstSection h1 {
     color: white;
     font-weight: 700;
-    font-size: 4em;
-    line-height: 0.9em;
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+}
+
+.firstSection .titulo div {
+    width: max-content;
+    position: relative;
+}
+
+.acaiDescubra {
+    margin-left: 0px;
+    margin-top: 20px;
 }
 
 .acai {
-    font-size: 6em!important;
+    font-size: 8rem!important;
 }
 
 .descubraAcai {
     color: white;
-    font-size: 45px;
+    font-size: 4rem;
     font-weight: 700;
     transition: 0.3s;
 }
@@ -41,10 +74,14 @@ body {
     margin-left: 15px;
 }
 
+.garrafa {
+    z-index: 0;
+}
+
 .circulo {
     position: absolute;
-    transform: scale(1.2);
     opacity: 0.5;
+    max-width: 95%;
 }
 
 .logo {
@@ -69,6 +106,8 @@ body {
 
 /* #endregion */
 
+/* #region secondSection */
+
 .secondSection {
     background-color: #fce205;
     position: relative;
@@ -80,19 +119,19 @@ body {
 }
 
 .promo h1 {
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 600;
 }
 
 .promo h4 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .btn-roxo {
     background-color: #46295a;
     border-radius: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 3rem;
     padding: 5px 20px;
     transition: 0.3s;
 }
@@ -104,14 +143,19 @@ body {
 }
 
 .circuloPromo {
+    z-index: -99;
     position: absolute;
-    right: -20%;
+    right: 0;
     height: 100%;
 }
 
+/* #endregion */
+
+/* #region thirdSection */
+
 .thirdSection {
-    background: rgb(76,121,255);
-    background: radial-gradient(circle, rgba(76,121,255,1) 0%, rgba(33,53,112,1) 100%);
+    background: rgb(76, 121, 255);
+    background: radial-gradient(circle, rgba(76, 121, 255, 1) 0%, rgba(33, 53, 112, 1) 100%);
     padding: 30px 150px;
 }
 
@@ -119,6 +163,7 @@ body {
     font-weight: 700;
     color: #fce205;
     width: 100vw;
+    font-size: 4rem;
 }
 
 .lata img {
@@ -141,6 +186,10 @@ body {
     cursor: pointer;
 }
 
+/* #endregion */
+
+/* #region Footer */
+
 footer {
     background-color: #e1e1e1;
 }
@@ -155,6 +204,7 @@ footer {
 
 .footerContent h5 {
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .footerContent .tituloFooter {
@@ -181,4 +231,92 @@ footer {
 
 .linkFooter:hover {
     text-decoration: none;
+}
+
+.logoFooter {
+    margin-left: -30px;
+    max-width: 300px;
+}
+.social {
+    width: 215px;
+    padding-left: 15px;
+}
+/* #endregion */
+
+@media screen and (max-width:576px) {
+    /* #region firstSection */
+    .logo {
+        left: 0;
+        top: 0;
+        width: 125px;
+        height: 125px;
+    }
+    .circulo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .firstSection {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .firstSection h1 {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+    }
+    .firstSection .acai {
+        font-size: 4.8rem!important;
+    }
+    .acaiDescubra {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .firstSection .descubraAcai {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+    }
+    .descubraAcai:hover {
+        margin-left: 0;
+    }
+    .firstSection .titulo {
+        justify-self: center;
+        text-align: center;
+    }
+    .firstSection .titulo div {
+        margin: auto;
+    }
+    .firstSection .container>.row {
+        flex-direction: column;
+    }
+    /* #endregion */
+    /* #region secondSection */
+    .promo h1 {
+        font-size: 50px;
+    }
+    .promo h4 {
+        font-size: 25px;
+    }
+    /* #endregion */
+    /* #region thirdSection */
+    /* #endregion */
+    /* #region Footer */
+    .footerContent h5 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .footerContent {
+        margin: 32px 0;
+    }
+    .logoFooter {
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 32px;
+    }
+    .social {
+        margin: 32px auto;
+        width: 80%;
+        padding: 0 15px;
+    }
+    /* #endregion */
 }
