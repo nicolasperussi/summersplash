@@ -344,6 +344,11 @@ footer {
         transform: translate(-50%, -15%);
         width: 90%;
         color: #fce205;
+        
+    }
+
+    .prevArrow, .nextArrow {
+        cursor: pointer;
     }
 
     /* #endregion */
