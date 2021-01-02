@@ -9,6 +9,10 @@ body {
     font-size: 1.6rem;
 }
 
+.telaTravada {
+    overflow-y: hidden!important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -244,6 +248,23 @@ footer {
 /* #endregion */
 
 @media screen and (max-width:576px) {
+    nav {
+        padding: 0px!important;
+    }
+
+    nav ul {
+        padding: 150px 0px;
+        background-color: #46295a;
+        position: relative;
+        height: 100vh;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        text-align: center;
+        font-size: 3rem;
+    }
+
     /* #region firstSection */
     .logo {
         left: 0;
