@@ -34,6 +34,13 @@ nav {
     top: 15px;
     right: 15px;
     z-index: 999;
+    border: none;
+    font-size: 3rem;
+    color: white!important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
 }
 
 /* #region firstSection */
@@ -241,10 +248,12 @@ footer {
     margin-left: -30px;
     max-width: 300px;
 }
+
 .social {
     width: 215px;
     padding-left: 15px;
 }
+
 /* #endregion */
 
 @media screen and (max-width:1024px) {
@@ -254,7 +263,6 @@ footer {
         width: 200px;
         height: 200px;
     }
-
     .firstSection h1 {
         font-size: 5rem;
         line-height: 6rem;
@@ -262,16 +270,15 @@ footer {
     .acai {
         font-size: 7rem;
     }
-
     .descubraAcai {
         font-size: 3.5rem;
     }
 }
+
 @media screen and (max-width:768px) {
     nav {
         padding: 0px!important;
     }
-
     nav ul {
         padding: 150px 0px;
         background-color: #46295a;
@@ -279,7 +286,6 @@ footer {
         height: 100vh;
         justify-content: space-around;
     }
-
     nav ul li {
         text-align: center;
         font-size: 3rem;
@@ -340,15 +346,15 @@ footer {
         width: 50%;
         padding: 0 15px;
     }
-
 }
+
 @media screen and (min-width:577px) and (max-width:768px) {
     .navbar-toggler-icon {
         font-size: 3em;
     }
 }
+
 @media screen and (max-width:576px) {
-    
     /* #region firstSection */
     .logo {
         left: 0;
@@ -408,16 +414,13 @@ footer {
         padding-right: 0px;
         position: relative;
     }
-
     .rowTitle {
         width: 100vw;
         margin: 0;
     }
-
     .slider-container {
         width: 100vw;
     }
-
     .arrows {
         display: flex;
         justify-content: space-between;
@@ -428,13 +431,10 @@ footer {
         transform: translate(-50%, -15%);
         width: 90%;
         color: #fce205;
-        
     }
-
     .prevArrow, .nextArrow {
         cursor: pointer;
     }
-
     /* #endregion */
     /* #region Footer */
     .footerContent h5 {
@@ -457,6 +457,7 @@ footer {
     }
     /* #endregion */
 }
+
 @media screen and (max-width:320px) {
     .firstSection h1 {
         font-size: 3rem;
