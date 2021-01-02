@@ -27,8 +27,9 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark w-100" id="navbar">
-    <button onclick="travarTela()" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button onclick="travarTela()" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+      data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse" id="navbarNavDropdown">
@@ -98,11 +99,10 @@
   </section>
 
   <section class="thirdSection">
-    <div class="row justify-content-center">
 
+    <div class="rowTitle row justify-content-center">
       <h1 class="mt-2 produtosTitulo text-center">CONHEÇA NOSSOS PRODUTOS</h1>
-
-      <div class="row align-items-center mt-4" style="width: 100vw;">
+      <div class="row align-items-center mt-4 d-none d-md-flex" style="width: 100vw;">
 
         <div class="col-md-6 col-lg-3 lata d-flex flex-column text-center justify-content-center">
           <img src="src/latas-garrafas/mockup-melao.png" class="img-fluid" alt="" style>
@@ -124,6 +124,39 @@
           <h4>AÇAÍ</h4>
         </div>
 
+      </div>
+
+    </div>
+
+    <div class="slider-container">
+
+      <div class="slider-item lata d-flex flex-column text-center justify-content-center">
+        <img src="src/latas-garrafas/mockup-melao.png" class="img-fluid" alt="" style>
+        <h4>MELÃO</h4>
+      </div>
+
+      <div class="slider-item lata d-flex flex-column text-center justify-content-center">
+        <img src="src/latas-garrafas/mockup-melancia.png" class="img-fluid" alt="" style>
+        <h4>MELANCIA</h4>
+      </div>
+
+      <div class="slider-item lata d-flex flex-column text-center justify-content-center">
+        <img src="src/latas-garrafas/mockup-maracuja.png" class="img-fluid" alt="" style>
+        <h4>MARACUJÁ</h4>
+      </div>
+
+      <div class="slider-item lata d-flex flex-column text-center justify-content-center">
+        <img src="src/latas-garrafas/mockup-acai.png" class="img-fluid" alt="" style>
+        <h4>AÇAÍ</h4>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <div class="prevArrow">
+        <i class="fas fa-angle-left"></i>
+      </div>
+      <div class="nextArrow">
+        <i class="fas fa-angle-right"></i>
       </div>
     </div>
   </section>
@@ -217,7 +250,16 @@
   <!-- Slick JS -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+  <script>
+    $(document).ready(function () {
+      $('.slider-container').slick({
+        prevArrow: '.prevArrow',
+        nextArrow: '.nextArrow'
+  });
+});
+  </script>
 </body>
 
 </html>

@@ -319,6 +319,33 @@ footer {
     }
     /* #endregion */
     /* #region thirdSection */
+    .thirdSection {
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+    }
+
+    .rowTitle {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .slider-container {
+        width: 100vw;
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: space-between;
+        font-size: 4em;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        width: 90%;
+        color: #fce205;
+    }
+
     /* #endregion */
     /* #region Footer */
     .footerContent h5 {
@@ -335,7 +362,7 @@ footer {
         margin-top: 32px;
     }
     .social {
-        margin: 32px auto;
+        margin: 32px auto 0px;
         width: 80%;
         padding: 0 15px;
     }
